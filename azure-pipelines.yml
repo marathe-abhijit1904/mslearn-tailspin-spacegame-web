@@ -1,11 +1,9 @@
 trigger:
-- '*'
+- main
 
 pool:
-  vmImage: 'ubuntu-20.04'
-  demands:
-  - npm
-
+  vmImage: 'ubuntu-latest'
+  
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
